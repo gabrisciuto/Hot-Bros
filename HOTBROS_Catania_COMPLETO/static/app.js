@@ -1,0 +1,1 @@
+const bs=[...document.querySelectorAll('.filters button')],cs=[...document.querySelectorAll('.cat')];bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.classList.remove('active'));b.classList.add('active');let f=b.dataset.f;cs.forEach(c=>c.classList.toggle('hide',f!='all'&&c.dataset.c!=f));});
